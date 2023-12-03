@@ -1,0 +1,206 @@
+:root {
+    --lightgray: #777c81;
+    --dark: #424549;
+    --darker: #36393e;
+    --darkest: #1e2124;
+    --accent: #7289da;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkest);
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  header {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--accent);
+  }
+  
+  #new-task {
+    display: flex;
+  }
+  
+  
+  
+  #new-task-input {
+    border: 1px solid;
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--lightgray);
+  }
+  
+  #new-task-input:focus {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 700;
+  }
+  #new-task-input::placeholder {
+    color: var(--lightgray);
+  }
+  
+  #new-task-submit {
+    
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  #new-task-submit:hover {
+    color: var(--dark);
+    cursor: pointer;
+  }
+  
+  #input-err {
+    display: none;
+    color: firebrick;
+    font-size: 0.75rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  main {
+    flex: 1 1 0%;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .task-list {
+    padding: 1rem;
+  }
+  
+  .task-list h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    text-align: center;
+  }
+  
+  p {
+    font: bold;
+    text-transform: uppercase;
+    
+  }
+  
+  #completedTodoP {
+    display: none;
+    text-decoration: line-through;
+  }
+  
+  
+  
+  #task-container .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  .task {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .content .text {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .material-symbols-outlined {
+    color: rgba(4, 4, 6, 0.516);
+    
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  .material-symbols-outlined:hover {
+    cursor: pointer;
+    color: rgb(124, 27, 27);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--lightgray);
+    border-radius: 5px;
+    margin: 15% auto;
+    padding: 45px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: var(--accent);
+    background-color: var(--darker);
+    
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px;
+    
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    background-color: var(--dark);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .checkBox[type="checkbox"] {
+      height: 15px;
+      width: 15px;
+      background-color: #424549;
+      
+  }
